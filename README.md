@@ -1,6 +1,6 @@
-# Project Title and purpose
+# Coloring Page- a fun box filling game where the user creates a picture by filling boxes with designated colors
 
-Coloring Page
+
 
 
       Our project is a coloring book page. It consists of a color key and a numbered grid in which the user has the ability to select a color and fill it in the designanted square. The end result of our game is a picture that is created by the user correctly fillig in each square with the correct color.
