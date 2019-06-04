@@ -34,6 +34,6 @@ This is the code that creates the grid for the coloring page. The code takes in 
 
 ## Acknowledgments
 
-* Make sure you select the correct number and click the correct box becasue the number goes away after it is filled.
+* Hint: Make sure you select the correct number and click the correct box becasue the number goes away after it is filled.
 * Our inspratin was the game "sand box" that we used to play that had a similar concept of filling boxes with color to create an unknown picture.
 
