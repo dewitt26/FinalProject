@@ -12,26 +12,17 @@
 ### Most interesting piece of your code and explanation for what it does.
 
 ```Java
-void keyPressed() {
-if (keyCode == LEFT) {
-   tree= tree.getLeft();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (keyCode == RIGHT) {
-   tree = tree.getRight();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (tree.getLeft()==null&&tree.getRight()==null) {
-   System.out.println(tree.getValue());
-   tree=t.returnTree();
-}
-}
+for(int j=55; j<=775;j+=20){
+       for(int i=50; i<770; i+=20){
+         if(c<=1295){
+         text(nums.get(c), i, j);}
+         c++;
+       }
+     }
+
 ```
-This is the code that moves down the tree as decisions are made. It gets each value from both left and right and also casts the value to a String. If the progressions arrives at the leaf nodes, those values are printed.
+This is the code that creates the grid for the coloring page. The code takes in the constructed arrayList (called num) with the numbers for each square and prints them in the correct place.
+
 ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
@@ -45,4 +36,4 @@ This is the code that moves down the tree as decisions are made. It gets each va
 
 * Make sure you select the correct number and click the correct box becasue the number goes away after it is filled.
 * Our inspratin was the game "sand box" that we used to play that had a similar concept of filling boxes with color to create an unknown picture.
-* etc
+
