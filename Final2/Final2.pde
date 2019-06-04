@@ -73,36 +73,36 @@ void setup(){
    text("7", 540, 875);
    text("8", 540, 935);
    text("9", 680, 875);
-   text("0", 680, 935);
+   text('0', 680, 935);
+   
    
    Numbers num= new Numbers();
-   num.numberDisplay();
+   num.printText();
    
 //
  
 }
 
 void draw(){
-       
+  int x, y;    
+  xy co = new xy();
+  x= co.getx();
+  y= co.gety();
   
-  if(mousePressed){
-     int x= mouseX;
-     int y = mouseY;
-     while(x%20!=0 && x>39 && x<761)
-     x--;
-     while(y%20!=0 && y>39 && y<761)
-     y--;
-     rect(x, y, 20, 20);
+  if(x>=40 && x<760 && y>=40 && y<760)
+     if(mousePressed){
+     rect(x, y, 20, 20);}
      
-   }
- 
- 
- 
+
+  
   showCursor();
 }
 
   public void keyPressed(){
     int i = 0;
+    Numbers nums= new Numbers();
+    xy coor = new xy();
+    
     //if(keyPressed){
       if( key== '1'){
         fill(#BFF6FF);
@@ -134,7 +134,21 @@ void draw(){
       if(key=='0'){
         fill(#F0F0F0);
         i=#F0F0F0;}
+   
+   if(key=='+'){
+     int place;
+     //int m,l;
+    //m= coor.getx();
+     //l= coor.gety();
+     int r=((coor.getx()-40)/20);
+     int s=((coor.gety()-40)/20);
+     place= r+(s*36);
+     text((String)nums.numberDisplay().get(place), (float) coor.getx()+10, (float)coor.gety()+15);
+     
+   } 
+        
   }
+
 
 void showCursor(){
   println(""+mouseX+" "+mouseY);
