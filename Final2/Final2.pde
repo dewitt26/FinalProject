@@ -74,6 +74,8 @@ void setup(){
    text("8", 540, 935);
    text("9", 680, 875);
    text('0', 680, 935);
+   textSize(11);
+   text("Hold cursor over box and press + to make number reappear", 427, 820);
    
    
    Numbers num= new Numbers();
